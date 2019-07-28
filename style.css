@@ -1,7 +1,6 @@
-h1, h2, h4 {
+h1, h2, h3, p {
     text-align: center;
     font-family: sans-serif;
-    color: darkgray;
 }
 
 img {
