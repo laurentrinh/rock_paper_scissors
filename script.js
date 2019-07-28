@@ -48,3 +48,8 @@ function gameCheck() {
         text.textContent = "You Lose!"
     }
 } 
+
+const imgs = document.querySelectorAll('img');
+imgs.forEach((img) => {
+    img.addEventListener('click', playRound);
+});
