@@ -9,12 +9,13 @@ function computerPlay() {
 }
 
 function playRound(playerSelection) {
-    const text = document.querySelector("#text");
-    const roundNum = document.querySelector("#roundNum");
-    const playerWin = document.querySelector("#playerWin");
-    const compWin = document.querySelector("#compWin");
-    const ties = document.querySelector("#ties");
+    const text = document.getElementById("#text");
+    const roundNum = document.getElementById("#roundNum");
+    const playerWin = document.getElementById("#playerWin");
+    const compWin = document.getElementById("#compWin");
+    const ties = document.getElementById("#ties");
 
+    let playerSelection = playerSelection.target.id;
     let computerSelection = computerPlay();
     round++;
     roundNum.textContent = round;
