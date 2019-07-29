@@ -50,7 +50,7 @@ function gameCheck() {
     }
 } 
 
-const imgs = document.querySelectorAll('img');
-imgs.forEach((img) => {
-    img.addEventListener('click', playRound);
+const buttons = document.querySelectorAll('button');
+buttons.forEach((button) => {
+    button.addEventListener('click', playRound);
 });
