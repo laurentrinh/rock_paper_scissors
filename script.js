@@ -43,10 +43,10 @@ function playRound(playerSelection) {
 
 function gameCheck() {
     if (player == 5) {
-        text.textContent = "You Win!"
+        text.textContent = "You Win!";
     }
     if (computer == 5 ) {
-        text.textContent = "You Lose!"
+        text.textContent = "You Lose!";
     }
 } 
 
