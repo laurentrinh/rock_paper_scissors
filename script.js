@@ -4,7 +4,7 @@ let round = 0;
 let tie = 0;
 
 function computerPlay() {
-    let computerResult = ["Rock", "Paper", "Scissors"];
+    let computerResult = ["rock", "paper", "scissors"];
     return computerResult[Math.floor(Math.random()*3)];
 }
 
@@ -25,9 +25,9 @@ function playRound(playerSelection) {
         text.textContent = "Tie!"
         ties.textContent = tie;
     }
-    else if ((playerSelection == "Rock" && computerSelection == "Paper") ||
-            (playerSelection == "Paper" && computerSelection == "Scissors") ||
-            (playerSelection == "Scissors" && computerSelection == "Rock")) {
+    else if ((playerSelection == "rock" && computerSelection == "paper") ||
+            (playerSelection == "paper" && computerSelection == "scissors") ||
+            (playerSelection == "scissors" && computerSelection == "rock")) {
                 computer++;
                 text.textContent = computerSelection " beats " playerSelection;
                 compWin.textContent = computer;
