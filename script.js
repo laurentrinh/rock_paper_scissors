@@ -9,11 +9,11 @@ function computerPlay() {
 }
 
 function playRound(playerSelection) {
-    const text = document.getElementById("#text");
-    const roundNum = document.getElementById("#roundNum");
-    const playerWin = document.getElementById("#playerWin");
-    const compWin = document.getElementById("#compWin");
-    const ties = document.getElementById("#ties");
+    const text = document.getElementById('text');
+    const roundNum = document.getElementById('roundNum');
+    const playerWin = document.getElementById('playerWin');
+    const compWin = document.getElementById('compWin');
+    const ties = document.getElementById('ties');
 
     let playerSelection = playerSelection.target.id;
     let computerSelection = computerPlay();
