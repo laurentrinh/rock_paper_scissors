@@ -28,12 +28,12 @@ function playRound(playerSelection) {
             (playerSelection == "paper" && computerSelection == "scissors") ||
             (playerSelection == "scissors" && computerSelection == "rock")) {
                 computer++;
-                text.textContent = +computerSelection+ " beats " +playerSelection+;
+                text.textContent = " "+computerSelection+ " beats " +playerSelection+"!";
                 compWin.textContent = computer;
             }
     else {
         player++;
-        text.textContent = +playerSelection+ " beats " +computerSelection+;
+        text.textContent = " "+playerSelection+ " beats " +computerSelection+"!";
         playerWin.textContent = player;
     }
 
