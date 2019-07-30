@@ -15,7 +15,6 @@ function playRound(playerSelection) {
     const compWin = document.getElementById('compWin');
     const ties = document.getElementById('ties');
 
-    let playerSelection = playerSelection.target.id;
     let computerSelection = computerPlay();
     round++;
     roundNum.textContent = round;
