@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script type="text/javascript" src="script.js"></script>
-        <link rel="stylesheet" href="style.css">
-    </head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 
     <body>
         <div id="header">
@@ -13,19 +11,20 @@
         <div id="choices">
             <h2>Choose Wisely</h2>
 
-            <button id = "rock">Rock</button>
-            <button id = "paper">Paper</button>
-            <button id = "scissors">Scissors</button>
+            <button onclick="playRound('Rock')">Rock</button>
+            <button onclick="playRound('Paper')">Paper</button>
+            <button onclick="playRound('Scissors')">Scissors</button>
         </div>
         
 
-        <div id="scoring">
+        <form id="scoring">
             <h3 id="text">Be The First To Score 5 Points!</h3>
             <p>Round: <span id="roundNum">0</span></p>
         
             <p>You: <span id="playerWin">0</span> &nbsp;
             Computer: <span id="compWin">0</span> &nbsp;
             Tie: <span id="ties">0</span></p>
-        </div>
+        <button onclick="resetButton()">Reset</button>
+        </form>
     </body>
 </html>
